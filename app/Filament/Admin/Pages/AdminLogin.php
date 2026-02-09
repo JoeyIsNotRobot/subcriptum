@@ -10,11 +10,11 @@ class AdminLogin extends Login
     {
         parent::mount();
 
-        if(app()->isLocal() == 'localhost'){
+        if (app()->isLocal() == 'localhost') {
             $this->form->fill([
                 'email' => 'hectorcoelho@hotmail.com',
                 'password' => '123mudar',
-                'remember' => true
+                'remember' => true,
             ]);
         }
     }
